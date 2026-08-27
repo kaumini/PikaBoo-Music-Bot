@@ -1,0 +1,57 @@
+name: 📚 Documentation
+description: Something on the website, docs or this README is wrong, unclear or missing.
+title: "[Docs]: "
+labels: ["documentation", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Docs issues are genuinely useful — if it confused you, it's confusing others too. 📖
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where is the problem?
+      options:
+        - README in this repository
+        - Website — Documentation page
+        - Website — Commands page
+        - Website — Features page
+        - Website — Premium page
+        - Website — Updates page
+        - Website — About / Team page
+        - In-bot help (!help)
+        - Terms of Service or Privacy Policy
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Link or section
+      description: Paste the URL, or name the section and heading.
+      placeholder: https://pikaboobot.netlify.app/commands — Premium section
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Information is incorrect or out of date
+        - Information is missing
+        - Wording is confusing
+        - Broken link or image
+        - Typo or formatting problem
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Quote the current text if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should it say instead?
+      description: A suggested rewrite makes this much faster to fix — but don't worry if you're not sure.

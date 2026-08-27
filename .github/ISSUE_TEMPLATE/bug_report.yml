@@ -1,0 +1,144 @@
+name: 🐛 Bug Report
+description: Something in PikaBoo is broken or behaving incorrectly.
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make PikaBoo better! 🎵
+
+        Please fill this out as completely as you can — the more detail, the faster we can fix it.
+
+        🔒 **Never include your bot token, password or any other credentials in this issue.**
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      description: Please confirm each of these.
+      options:
+        - label: I searched [existing issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues?q=is%3Aissue) and this has not been reported.
+          required: true
+        - label: I checked the [status page](https://pikaboobot.netlify.app/status) and PikaBoo is not in a known outage.
+          required: true
+        - label: This issue contains no tokens, passwords or other secrets.
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What went wrong?
+      description: A clear and concise description of the bug.
+      placeholder: When I run !play with a Spotify playlist link, the bot joins the channel but never starts playing.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exactly what you did, so we can see it too.
+      placeholder: |
+        1. Join voice channel "Music"
+        2. Run `!play <link>`
+        3. Bot joins but stays silent
+        4. Run `!queue` — queue is empty
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: The playlist should be queued and the first track should start playing.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      description: Include the exact error message or bot reply, if there was one.
+      placeholder: The bot replied "Track not found" and left the channel after 30 seconds.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area is affected?
+      options:
+        - Playback (play / pause / resume / skip / stop)
+        - Queue (queue / clear / shuffle / remove)
+        - Audio filters & effects (bassboost / nightcore / 8D / karaoke)
+        - Volume
+        - Button controls in the embed
+        - Slash commands
+        - 24/7 playback
+        - Radio stations
+        - Voice commands
+        - DJ roles / permissions
+        - Configuration (prefix / language / auto-join)
+        - Website or dashboard
+        - Other / not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Which music source were you using?
+      options:
+        - YouTube
+        - Spotify
+        - SoundCloud
+        - Apple Music
+        - Deezer
+        - Amazon Music
+        - Radio station
+        - Not applicable
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command used
+      description: The exact command you ran. Remove anything private from the link.
+      placeholder: "!play https://open.spotify.com/playlist/..."
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Often, but not always
+        - Rarely / happened once
+    validations:
+      required: true
+  - type: input
+    id: server-size
+    attributes:
+      label: Server size (approx. member count)
+      placeholder: "~250 members"
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Which plan are you on?
+      options:
+        - Free
+        - Premium
+        - Pro
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When did this happen?
+      description: Date and approximate time, including your timezone — it helps us find the matching logs.
+      placeholder: "2025-08-27, around 21:30 IST"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag and drop any images or clips here. Blur out anything private first.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Any other context that might help — workarounds you found, when it started, related issues.

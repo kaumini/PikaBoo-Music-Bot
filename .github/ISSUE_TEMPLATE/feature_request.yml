@@ -1,0 +1,96 @@
+name: ✨ Feature Request
+description: Suggest a brand-new capability for PikaBoo.
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea for PikaBoo? We'd love to hear it. 🎶
+
+        Use this template for something **new**. If you want to improve something that already exists,
+        use the [Improvement template](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=improvement.yml) instead.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched [existing issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues?q=is%3Aissue) and nobody has requested this.
+          required: true
+        - label: I checked the [Commands](https://pikaboobot.netlify.app/commands) and [Features](https://pikaboobot.netlify.app/features) pages and this does not already exist.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Tell us the pain point first — it often shapes a better solution than the one you had in mind.
+      placeholder: Our DJs constantly need to re-add the same set of songs at the start of every event.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like PikaBoo to do?
+      description: Describe the feature as concretely as you can.
+      placeholder: A `!playlist save <name>` command that stores the current queue so it can be reloaded with `!playlist load <name>`.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which area does this belong to?
+      options:
+        - Music playback
+        - Queue management
+        - Audio filters & effects
+        - Playlists
+        - Music sources / integrations
+        - Radio stations
+        - Moderation & DJ controls
+        - Server configuration
+        - Slash commands / button controls
+        - Website or dashboard
+        - Premium features
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Proposed commands or interaction
+      description: If your idea needs new commands or buttons, sketch them out here.
+      placeholder: |
+        `!playlist save <name>` — save the current queue
+        `!playlist load <name>` — replace the queue with a saved playlist
+        `!playlist list` — show saved playlists
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Other ways to solve the same problem, or how you work around it today.
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Where do you think this fits?
+      options:
+        - Free — everyone should have it
+        - Premium
+        - Pro
+        - No opinion
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Would use it regularly
+        - Blocking how we use PikaBoo today
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Examples from other bots, mockups, links — anything that helps us picture it.

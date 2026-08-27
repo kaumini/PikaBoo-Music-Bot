@@ -1,0 +1,63 @@
+name: ❓ Question / Support
+description: Ask how something works, or get help with PikaBoo in your server.
+title: "[Question]: "
+labels: ["question", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚡ **Need a quick answer?** The [PikaBoo Support Server](https://discord.gg/QsJTFvDWZd) is usually much
+        faster than GitHub — the team and community are there live.
+
+        Use this template if you'd rather have the answer written down publicly for others to find.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      options:
+        - label: I checked the [Documentation](https://pikaboobot.netlify.app/docs) and [Commands](https://pikaboobot.netlify.app/commands) pages.
+          required: true
+        - label: I searched [existing issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues?q=is%3Aissue) for the same question.
+          required: true
+        - label: This issue contains no tokens, passwords or other secrets.
+          required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What's your question?
+      placeholder: How do I limit the skip and stop commands to members with our DJ role?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?
+      description: Commands you ran, settings you changed, docs you read.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: What's it about?
+      options:
+        - Inviting or setting up PikaBoo
+        - Playing music
+        - Queue management
+        - Audio filters & effects
+        - DJ roles & permissions
+        - Custom prefix / language / auto-join
+        - Premium plans & billing
+        - Music sources
+        - Website or dashboard
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Which plan are you on?
+      options:
+        - Free
+        - Premium
+        - Pro
+        - Not sure
+    validations:
+      required: true

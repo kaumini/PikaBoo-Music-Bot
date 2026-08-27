@@ -1,0 +1,100 @@
+name: 🎵 Playback / Source Issue
+description: A specific track, playlist, or music source won't play.
+title: "[Playback]: "
+labels: ["bug", "playback", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a **particular track, playlist or source** fails, rather than PikaBoo being broken overall.
+
+        🔒 Please don't include private playlist links you don't want public.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      options:
+        - label: I checked the [status page](https://pikaboobot.netlify.app/status) and PikaBoo is not in a known outage.
+          required: true
+        - label: I tried a different track and confirmed the problem is specific to this one.
+          required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Which source?
+      options:
+        - YouTube
+        - Spotify
+        - SoundCloud
+        - Apple Music
+        - Deezer
+        - Amazon Music
+        - Radio station
+        - Direct URL / other
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What were you trying to play?
+      options:
+        - A single track
+        - A playlist
+        - An album
+        - A live stream
+        - A radio station
+        - A search query (no link)
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Track / playlist link or search query
+      description: The exact input you gave PikaBoo. Leave out anything private.
+      placeholder: "https://open.spotify.com/track/..."
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What happened?
+      options:
+        - Bot replied "Track not found"
+        - Bot replied "No route found"
+        - Another error message (paste it below)
+        - Bot joined but stayed silent
+        - Audio started then cut out
+        - Audio stutters or is distorted
+        - Wrong track played
+        - Only part of the playlist loaded
+        - Bot left the channel unexpectedly
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Exact error message or bot reply
+      description: Copy it in verbatim, or attach a screenshot.
+  - type: textarea
+    id: details
+    attributes:
+      label: Any other details
+      description: Does it fail every time? Did it work before? Does the same track work from a different source?
+  - type: input
+    id: when
+    attributes:
+      label: When did this happen?
+      description: Date and approximate time with your timezone — helps us match it to logs.
+      placeholder: "2025-08-27, around 21:30 IST"
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Which plan are you on?
+      options:
+        - Free
+        - Premium
+        - Pro
+        - Not sure
+    validations:
+      required: true
