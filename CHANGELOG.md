@@ -1,101 +1,139 @@
-# 📋 Changelog
+# 🚀 PikaBoo v4 Changelog
 
-All notable changes to **PikaBoo Music** are documented here.
+> A major update focused on better music management, cleaner controls, persistence, and an improved Discord experience.
 
-The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and PikaBoo aims to follow
-[Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## ✨ Highlights
 
-> 📰 Release announcements are also posted on the [Updates page](https://pikaboobot.netlify.app/updates)
-> and in the [Support Server](https://discord.gg/QsJTFvDWZd).
+- 🎶 **Unified Playlists** — Manage playlists through a single `/playlist` panel instead of separate commands.
+- ❤️ **Liked Songs** — Like the currently playing track to save it to your personal Liked Songs playlist and receive the track in your DMs.
+- 💾 **Persistent Likes** — The Like button on now-playing panels now permanently saves the track.
+- 🐛 **In-Discord Reports** — Use `/report` to submit bug reports, playback issues, feature suggestions, or other feedback without leaving Discord.
+- 🔄 **Queue Persistence** — After a bot or host restart, the player can reconnect and restore the queue, volume, loop mode, and playback position.
+- 🎨 **Improved Panels** — Now-playing, playlists, setup, DJ, and Liked Songs use cleaner ribbon-style interfaces with album-art accent colors.
 
----
+## 🆕 New Commands
 
-## [4.0.0] Coming soon
+| Command | Aliases | Description |
+|---|---|---|
+| `/playlist` | `pl`, `plist` | Create, view, load, add to, remove from, delete, or copy playlists from one panel |
+| `/likesong` | `like`, `grab`, `ls` | Save the current track to Liked Songs and DM the track |
+| `/viewlikedsongs` | `vls`, `likedsongs`, `mylikes` | Browse, play, or remove songs from your Liked Songs |
+| `/filters` | `fx`, `filter` | Manage available audio filters from a dropdown |
+| `/report` | `bugreport` | Submit a bug report, playback issue, suggestion, or other feedback |
 
-Nothing yet — [open an issue](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new/choose) to suggest
-what lands next.
+## 📂 `/playlist` Panel
 
----
+One panel with **eight actions**:
 
-## [3.0.0] — 2025-02-20
+1. 📋 **View My Playlists** — See playlist names and song counts
+2. 🎵 **View Song List** — Browse the tracks inside a playlist
+3. ➕ **Create a Playlist** — Enter a playlist name through a popup
+4. 🗑️ **Delete a Playlist**
+5. ▶️ **Load into Queue** — Load and play a playlist in the current server
+6. ➕ **Add a Song**
+7. ➖ **Remove a Song**
+8. 📥 **Copy from Another User** — Create a copy of another user's playlist
 
-> 🎉 **Major upgrade** — released on 20 February 2025.
-> See the [Updates page](https://pikaboobot.netlify.app/updates) for the original announcement.
+## ⚙️ `/setup` & `/dj` Improvements
 
-### Added
+### `/setup`
 
-- **Additional music sources integrated** — SoundCloud, Apple Music, Deezer and Amazon Music are now fully
-  functional with PikaBoo, joining YouTube and Spotify.
-- **Button controls in embeds** — music control buttons are now integrated into the player embed, eliminating
-  the need to type commands.
-- **Advanced track setup system** — a reworked setup flow for track handling.
-- **More slash commands** — additional commands are now available as native Discord slash commands.
-- **Moderation and DJ commands** — new commands for server moderators and DJ roles.
+- 🎵 Create a dedicated song-request channel
+- 🔄 **Refresh / repair the player panel** if it was deleted
+- 🗑️ Delete the setup
 
-### Fixed
+### `/dj`
 
-- **Lavalink WebSocket errors** — fixed `Track not found` and `No route found` errors by improving route
-  resolution and track validation.
+- 👤 Add a DJ role with a role picker
+- ➖ Remove a DJ role
+- 🔛 Enable or disable DJ mode
+- 🧹 Clear all configured DJ roles
 
----
+## 🐛 `/report` Categories
 
-## [1.0.0] — 2021
+- 🪲 **Bug Report**
+- 🎵 **Music / Playback Issue**
+- 💡 **Feature Suggestion**
+- 📝 **Something Else**
 
-🎉 Initial public release of PikaBoo.
+## 🔧 Improvements
 
-### Added
-
-- Discord music streaming powered by [Lavalink](https://github.com/lavalink-devs/Lavalink).
-- **YouTube** and **Spotify** playback support.
-- Core playback commands — `play`, `pause`, `resume`, `skip`, `stop`, `volume`.
-- Queue management — `queue`, `clear`, `shuffle`, `remove`.
-- Bot info commands — `help`, `ping`, `about`.
-
----
-
-## Earlier history
-
-PikaBoo has been running since 2021, and detailed release notes for the versions between the initial launch
-and v3 predate this changelog. Only changes published on the
-[Updates page](https://pikaboobot.netlify.app/updates) are recorded above.
-
----
-
-<details>
-<summary><strong>📝 How to add a new entry</strong> (for maintainers)</summary>
-
-<br>
-
-Add changes to the `[Unreleased]` section as you make them, grouped under whichever of these headings apply:
-
-| Heading | Use it for |
+| Feature | Improvements |
 |---|---|
-| `Added` | New features, commands or sources |
-| `Changed` | Changes to existing behaviour |
-| `Deprecated` | Features that will be removed in a future version |
-| `Removed` | Features removed in this version |
-| `Fixed` | Bug fixes |
-| `Security` | Security or privacy fixes |
+| `/loop` | Now accepts `repeat` and uses a clear 3-button panel: **Loop Song** · **Loop Queue** · **Off** |
+| `/filters` | Adds a unified filter menu with Vaporwave and Bass Boost levels: **High / Medium / Low / Off** |
+| Now Playing | Cleaner layout, album-art accent colors, and a Like button that saves tracks |
+| Queue | Improved presentation and persistent queue restoration after restart |
+| Playlists | Playlist management consolidated into one interactive panel |
+| Setup | Player panel can be refreshed or repaired directly from `/setup` |
+| DJ | DJ management is handled through a single interactive panel |
+| Commands | Cleaner, more consistent command descriptions and user-facing text |
 
-When you cut a release, rename `[Unreleased]` to the new version with the release date in `YYYY-MM-DD`
-format, and start a fresh empty `[Unreleased]` above it.
+## 🎛️ Available Filters
 
-Version numbers follow [SemVer](https://semver.org/spec/v2.0.0.html):
+`8D / Rotation` · `Nightcore` · `Vaporwave` · `Karaoke` · `Low Pass` · `Tremolo` · `Vibrato` · `Bass Boost (High / Medium / Low / Off)` · `Rate Reset` · `Reset All`
 
-- **MAJOR** (`3.0.0`) — breaking changes, such as renamed or removed commands
-- **MINOR** (`3.1.0`) — new features that don't break anything existing
-- **PATCH** (`3.0.1`) — bug fixes only
+> ℹ️ The individual filter commands such as `/nightcore`, `/8d`, and `/bassboost` remain available.
 
-Link issues and pull requests where relevant, so users can trace a change back to the report that prompted it:
+## 🎮 Player Controls
 
-```markdown
-- Fixed Spotify playlists silently dropping tracks past #100 ([#42](https://github.com/kaumini/PikaBoo-Music-Bot/issues/42))
-```
+Every now-playing panel includes controls for:
 
-</details>
+`Previous` · `Rewind` · `Pause` · `Forward` · `Skip` · `Loop` · `Stop` · `Shuffle` · `Like Song`
 
----
+❤️ **Like Song** now saves the current track instead of only sending it to your DMs.
 
-[Unreleased]: https://github.com/kaumini/PikaBoo-Music-Bot/compare/v3.0.0...HEAD
-[3.0.0]: https://github.com/kaumini/PikaBoo-Music-Bot/releases/tag/v3.0.0
-[1.0.0]: https://github.com/kaumini/PikaBoo-Music-Bot/releases/tag/v1.0.0
+## 🎵 Music Features
+
+PikaBoo v4 includes:
+
+- ▶️ Play, pause, resume, skip, stop, and queue controls
+- 🔎 Search and choose tracks before playing
+- ⏭️ Play a song next in the queue
+- 🔁 Replay the current track
+- ⏩ Seek to a specific timestamp
+- 🔀 Shuffle and queue management
+- 🔊 Volume control
+- 🎛️ Multiple audio filters
+- 🎤 Lyrics
+- 🤖 Autoplay
+- 🔄 24/7 voice-channel support
+
+## 📚 Playlist & Personal Music
+
+- 📂 Create and manage personal playlists
+- ▶️ Load playlists directly into the queue
+- 👥 Copy playlists from other users
+- ❤️ Save tracks to Liked Songs
+- 🎵 Play your saved Liked Songs whenever you want
+
+## 🛠️ Reliability & Persistence
+
+- 💾 Queue state is preserved across restarts
+- 🔊 Volume settings persist
+- 🔁 Loop mode persists
+- ⏱️ Playback position persists
+- 🎵 The full queue can be restored after a restart
+- 🔄 The player reconnects to the last active voice channel
+
+## ℹ️ Command Overview
+
+### 🎵 Music
+
+`play` · `playnext` · `search` · `pause` · `resume` · `skip` · `skipto` · `stop` · `queue` · `nowplaying` · `volume` · `loop` · `shuffle` · `seek` · `replay` · `remove` · `clearqueue` · `join` · `leave` · `autoplay` · `lyrics` · `likesong`
+
+### 📂 Playlists
+
+`playlist` · `viewlikedsongs`
+
+### 🎛️ Filters
+
+`filters` · `8d` · `bassboost` · `nightcore` · `karaoke` · `lowpass` · `pitch` · `rate` · `rotation` · `speed` · `tremolo` · `vibrato` · `reset`
+
+### ⚙️ Server Configuration
+
+`prefix` · `247` · `dj` · `setup`
+
+### ℹ️ Information & Utilities
+
+`help` · `about` · `botinfo` · `ping` · `invite` · `lavalink` · `players` · `report`
