@@ -7,6 +7,21 @@ body:
     attributes:
       value: |
         Docs issues are genuinely useful — if it confused you, it's confusing others too. 📖
+
+        Only one field is required.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Quote the current text if you can, and tell us where you saw it.
+      placeholder: The Commands page still lists `!np`, but the bot says that command doesn't exist.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Link or section
+      placeholder: https://pikaboobot.netlify.app/commands — Premium section
   - type: dropdown
     id: where
     attributes:
@@ -22,14 +37,6 @@ body:
         - In-bot help (!help)
         - Terms of Service or Privacy Policy
         - Other
-    validations:
-      required: true
-  - type: input
-    id: location
-    attributes:
-      label: Link or section
-      description: Paste the URL, or name the section and heading.
-      placeholder: https://pikaboobot.netlify.app/commands — Premium section
   - type: dropdown
     id: kind
     attributes:
@@ -41,15 +48,6 @@ body:
         - Broken link or image
         - Typo or formatting problem
         - Other
-    validations:
-      required: true
-  - type: textarea
-    id: problem
-    attributes:
-      label: What's wrong?
-      description: Quote the current text if you can.
-    validations:
-      required: true
   - type: textarea
     id: suggestion
     attributes:

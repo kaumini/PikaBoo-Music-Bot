@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 PikaBoo Support Server
+  - name: 💬 Ask on the Support Server
+    about: Need help right now? The team and community are live on Discord — usually the fastest way to get unstuck.
     url: https://discord.gg/QsJTFvDWZd
-    about: Need help right now? Ask the team and the community on Discord — fastest way to get unstuck.
-  - name: 📚 Documentation
+  - name: 🙋 Ask a Question (Q&A)
+    about: Prefer a written answer others can find later? Ask in Discussions — questions belong there, not in issues.
+    url: https://github.com/kaumini/PikaBoo-Music-Bot/discussions/new?category=q-a
+  - name: 📖 Read the Documentation
+    about: Setup guide, full command list and configuration options.
     url: https://pikaboobot.netlify.app/docs
-    about: Setup guide, commands and configuration options.
-  - name: 📈 Service Status
+  - name: 📈 Check Service Status
+    about: Is PikaBoo down right now? Check here before reporting an outage.
     url: https://pikaboobot.netlify.app/status
-    about: Check whether PikaBoo is currently up before reporting an outage.
-  - name: 📰 Latest Updates
-    url: https://pikaboobot.netlify.app/updates
-    about: See what changed recently — your issue may already be fixed.

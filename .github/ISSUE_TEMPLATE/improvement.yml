@@ -6,25 +6,30 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this for polishing something PikaBoo **already does**.
+        For polishing something PikaBoo **already does**. Only two short fields are required.
 
         Something broken? → [Bug report](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=bug_report.yml)
         Something entirely new? → [Feature request](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=feature_request.yml)
-  - type: checkboxes
-    id: preflight
-    attributes:
-      label: Before you start
-      options:
-        - label: I searched [existing issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues?q=is%3Aissue) and this has not been suggested.
-          required: true
   - type: input
     id: target
     attributes:
       label: What should be improved?
-      description: The command, screen or behaviour you're talking about.
       placeholder: "The !queue embed"
     validations:
       required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: How should it work instead?
+      placeholder: Paginate the queue — 10 tracks per page with next/previous buttons.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: How does it work today?
+      description: Optional — what's wrong with the current behaviour.
+      placeholder: The queue shows all tracks in one message, so it's unreadable past ~20 songs.
   - type: dropdown
     id: type
     attributes:
@@ -40,28 +45,6 @@ body:
         - Configuration & defaults
         - Website or dashboard
         - Other
-    validations:
-      required: true
-  - type: textarea
-    id: current
-    attributes:
-      label: How does it work today?
-      description: Describe the current behaviour, and why it falls short.
-      placeholder: The queue embed shows all tracks in one long message, so it gets unreadable past ~20 songs.
-    validations:
-      required: true
-  - type: textarea
-    id: proposed
-    attributes:
-      label: How should it work instead?
-      placeholder: Paginate the queue — 10 tracks per page with next/previous buttons and a page counter.
-    validations:
-      required: true
-  - type: textarea
-    id: benefit
-    attributes:
-      label: Who benefits, and how?
-      placeholder: Any server with a long queue — mainly larger communities running events.
   - type: textarea
     id: extra
     attributes:
