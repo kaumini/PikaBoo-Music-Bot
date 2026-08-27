@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 PikaBoo Support Server
+    url: https://discord.gg/QsJTFvDWZd
+    about: Need help right now? Ask the team and the community on Discord — fastest way to get unstuck.
+  - name: 📚 Documentation
+    url: https://pikaboobot.netlify.app/docs
+    about: Setup guide, commands and configuration options.
+  - name: 📈 Service Status
+    url: https://pikaboobot.netlify.app/status
+    about: Check whether PikaBoo is currently up before reporting an outage.
+  - name: 📰 Latest Updates
+    url: https://pikaboobot.netlify.app/updates
+    about: See what changed recently — your issue may already be fixed.
