@@ -233,7 +233,7 @@ Pick the template that matches what you have:
 | ✨ Suggest a brand-new feature | **[Feature request](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=feature_request.yml)** |
 | 🛠️ Improve something that already exists | **[Improvement](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=improvement.yml)** |
 | 🎵 Report a broken track, playlist or source | **[Playback / source issue](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=playback_issue.yml)** |
-| 📚 Fix the docs or website | **[Documentation](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=documentation.yml)** |
+| 📝 Fix the docs or website | **[Report a docs problem](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=documentation.yml)** |
 | ❓ Ask a question or get help | **[Question / support](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=question.yml)** |
 
 **Before opening an issue:**
