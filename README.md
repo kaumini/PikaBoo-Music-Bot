@@ -1,2 +1,2 @@
-# Pikaboo-Music-Bot
+# PikaBoo-Music-Bot
 Official Pika Palace Music Bot
