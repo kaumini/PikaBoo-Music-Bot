@@ -234,7 +234,11 @@ Pick the template that matches what you have:
 | 🛠️ Improve something that already exists | **[Improvement](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=improvement.yml)** |
 | 🎵 Report a broken track, playlist or source | **[Playback / source issue](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=playback_issue.yml)** |
 | 📝 Fix the docs or website | **[Report a docs problem](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=documentation.yml)** |
-| ❓ Ask a question or get help | **[Question / support](https://github.com/kaumini/PikaBoo-Music-Bot/issues/new?template=question.yml)** |
+| ❓ Ask a question or get help | **[Discussions → Q&A](https://github.com/kaumini/PikaBoo-Music-Bot/discussions/new?category=q-a)** — not an issue |
+
+> 💡 **Questions belong in [Discussions](https://github.com/kaumini/PikaBoo-Music-Bot/discussions), not issues.** Issues are for actionable work —
+> bugs, features and improvements. Asking in Q&A gets you a threaded answer that stays searchable for the
+> next person with the same question.
 
 **Before opening an issue:**
 
@@ -260,9 +264,10 @@ Useful links:
 Need a hand, or want to talk to the team directly?
 
 - 💬 **[Join the PikaBoo Support Server](https://discord.gg/QsJTFvDWZd)** — fastest way to get help
+- 🙋 **[Discussions → Q&A](https://github.com/kaumini/PikaBoo-Music-Bot/discussions/categories/q-a)** — ask a question and get a written, searchable answer
 - 📚 **[Documentation](https://pikaboobot.netlify.app/docs)**
 - 📈 **[Service Status](https://pikaboobot.netlify.app/status)**
-- 🐛 **[GitHub Issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues)**
+- 🐛 **[GitHub Issues](https://github.com/kaumini/PikaBoo-Music-Bot/issues)** — bugs, features and improvements only
 
 ---
 
@@ -278,6 +283,7 @@ Need a hand, or want to talk to the team directly?
 | 📚 Documentation | https://pikaboobot.netlify.app/docs |
 | 📰 Updates | https://pikaboobot.netlify.app/updates |
 | 📋 Changelog | [CHANGELOG.md](CHANGELOG.md) |
+| 🙋 Discussions | https://github.com/kaumini/PikaBoo-Music-Bot/discussions |
 | 📈 Status | https://pikaboobot.netlify.app/status |
 | 👥 Team | https://pikaboobot.netlify.app/team |
 | 💬 Support Server | https://discord.gg/QsJTFvDWZd |
