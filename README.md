@@ -55,7 +55,7 @@ Also included:
 
 ### Sources
 
-YouTube · YouTube Music · Spotify · SoundCloud · Apple Music · Deezer · Yandex · JioSaavn
+YouTube · YouTube Music · Spotify · SoundCloud · Apple Music 
 
 ---
 
