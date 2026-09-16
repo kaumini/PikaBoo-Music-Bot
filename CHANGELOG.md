@@ -46,8 +46,6 @@ The PikaBoo website has also received a major rework centred on an interactive P
 
 - **Premium account dashboard.** Signed-in members can view their Free, Premium, or Pro status, refresh their membership data, browse servers they can manage, and add PikaBoo to a selected server.
 
-- **Developer Premium controls.** Authorized developer accounts can manually grant or revoke Premium and Pro plans when support intervention is required.
-
 - **Free, Premium, and Pro plans.** A dedicated Premium page compares included features and limits for queues, playlists, songs per playlist, and Liked Songs.
 
 - **Searchable command directory.** Commands can be searched and filtered by Music, Playlists, Filters, Server, and Info. Each entry includes its slash command, prefix usage, aliases, description, and Premium label where applicable.
@@ -73,8 +71,6 @@ The PikaBoo website has also received a major rework centred on an interactive P
 - **Command interfaces.** Setup, playlists, DJ, Liked Songs, reports, loop controls, and now-playing now use a consistent ribbon-style layout instead of mixed classic embeds.
 
 - **Premium feature presentation.** Premium commands and features are now labelled consistently across the bot, website command directory, feature pages, and plan comparison.
-
-- **Command descriptions and user-facing text** have been standardized throughout the bot and website.
 
 ### Fixed
 
