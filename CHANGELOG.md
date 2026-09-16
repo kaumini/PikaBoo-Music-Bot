@@ -52,8 +52,6 @@ The PikaBoo website has also received a major rework centred on an interactive P
 
 - **Feature guides.** Dedicated pages explain the live player, playback, playlists, Liked Songs, autoplay, audio filters, DJ roles, 24/7 mode, reports, and the complete `/setup` process.
 
-- **Dedicated status page.** The website now includes a status page covering the Discord gateway, Lavalink audio nodes, commands, player persistence, and setup panels.
-
 - **Additional information pages.** Added dedicated Help, Team, Updates, Changelog, Setup, Commands, Features, Premium, and Dashboard pages.
 
 - **Major visual rework.** The website now uses a responsive dark interface with animated neon-gradient PikaBoo branding, Discord-styled components, clearer navigation, and carefully placed PikaBoo artwork.
